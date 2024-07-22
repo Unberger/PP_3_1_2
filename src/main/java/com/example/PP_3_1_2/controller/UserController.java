@@ -9,7 +9,6 @@ import com.example.PP_3_1_2.model.User;
 import com.example.PP_3_1_2.service.UserService;
 
 
-
 @Controller
 @RequestMapping("/users")
 public class UserController {
@@ -27,7 +26,7 @@ public class UserController {
     }
 
     @GetMapping("/user/new")
-    public String newUser(@ModelAttribute("user") User user) {
+    public String createUser(@ModelAttribute("user") User user) {
         return "new";
     }
 
